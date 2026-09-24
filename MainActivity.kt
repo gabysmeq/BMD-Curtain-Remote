@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun sendHex(hex: String, label: String) {
         val host = ipInput.text.toString().trim()
-        val port = portInput.text.toString().toString().toIntOrNull()
+        val port = portInput.text.toString().toIntOrNull() 
 
         if (host.isEmpty() || port == null || port !in 1..65535) {
             status.text = "Enter a valid IP and port."
